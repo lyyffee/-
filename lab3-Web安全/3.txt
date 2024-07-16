@@ -1,0 +1,20 @@
+sudo service apache2 start
+sudo service apache2 restart
+sudo chmod -R o+rwx /home
+
+sudo gedit /etc/apache2/sites-available/000-default.conf
+cd /var/www/CSRF/Attacker
+
+elgg：http://www.csrflabelgg.com
+Attacker：http://www.csrflabattacker.com
+
+alice：42
+samy：45
+http://www.csrflabattacker.com
+
+cd /var/www/CSRF/Elgg/vendor/elgg/elgg/engine/classes/Elgg
+sudo gedit ActionService.php
+
+
+http://www.xsslabelgg.com/
+nc -l 5555 -v

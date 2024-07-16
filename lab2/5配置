@@ -1,0 +1,11 @@
+abi <abi/3.0>
+
+include <tunables/global>
+
+/home/lyy/2/code(5)/banksv{
+include <abstractions/base>
+include <abstractions/apache2-common>
+/home/lyy/2/code(5)/db/user.db rwk
+/home/lyy/2/code(5)/index.html r,
+/home/lyy/2/code(5)/banksv mr,
+/home/lyy/2/code(5)/db/user.db-journal w
